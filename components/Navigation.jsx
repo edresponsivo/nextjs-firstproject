@@ -27,6 +27,11 @@ export function Navigation({}) {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" href="/colors">
+                  Colors
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" href="/services">
                   Services
                 </Link>

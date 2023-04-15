@@ -13,7 +13,7 @@ const UserPage = async ({ params }) => {
   return (
     <div className="row">
       <div className="col-md-6 offset-md-3">
-        {/* <pre>{JSON.stringify(user)}</pre> */}
+        <pre>{JSON.stringify(user)}</pre>
         <div className="card">
           <div className="card-header text-center">
             <img src={user.avatar} alt={user.email} />
@@ -23,6 +23,7 @@ const UserPage = async ({ params }) => {
               {user.id} {user.first_name} {user.last_name}
             </h3>
             <p>{user.email}</p>
+            
           </div>
         </div>
       </div>
