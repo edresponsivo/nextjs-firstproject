@@ -1,9 +1,15 @@
 import Users from "@/components/Users";
 const fetchUsers = async () => {
-  const res = await fetch("https://reqres.in/api/users");
-  const resJson = await res.json();
-  // console.log(resJson.data);
-  return resJson.data;
+  try {
+    const res = await fetch("https://reqres.in/api/users?page=2");
+    const resJson = await res.json();
+    // console.log(resJson.data);
+    return resJson.data;
+    
+  } catch (error) {
+    console.log(error);
+    return []
+  }
 };
 
 const IndexPage = async () => {
